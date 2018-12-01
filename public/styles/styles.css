@@ -54,7 +54,6 @@ body {
 
 
 #title-div {
-   /* background: black; */
    width: 100%;
    height: 150px;
    opacity: .8;
@@ -77,13 +76,12 @@ body {
    button {
      background: transparent; outline: none;
      position: relative;
-     border: none;
-     /* border: 2px solid #111; */
+    
      padding: 15px 50px;
      overflow: hidden;
    }
 
-   /*button:before (attr data-hover)*/
+
    button:hover:before{opacity: 1; transform: translate(0,0);}
    button:before{
      content: attr(data-hover);
@@ -97,7 +95,7 @@ body {
      transform: translate(-100%,0);
      transition: all .3s ease-in-out;
    }
-     /*button div (button text before hover)*/
+  
      button:hover div{opacity: 0; transform: translate(100%,0)}
      button div{
        margin-top: 15px;
