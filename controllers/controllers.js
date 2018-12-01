@@ -1,4 +1,3 @@
-
 var express = require("express");
 var router = express.Router();
 var bathroom = require("../models/bathroom.js");
@@ -31,9 +30,8 @@ router.get("/bathroom", function(req, res) {
 
 router.get("/listview", function(req,res){
   res.render("listview");
-});
-
-
+ });
+ 
 router.post("/api/bathroom", function(req, res) {
   bathroom.create(["bathroom_name", "devoured"], [req.body.name, req.body.devoured], function(result) {
 
